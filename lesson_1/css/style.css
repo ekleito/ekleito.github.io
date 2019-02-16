@@ -1,0 +1,16 @@
+*{
+	box-sizing: border-box ;
+}
+html, body {
+	min-height: 100% ;
+}
+body {
+	font-size: 100% ;
+	background-color: black ;
+	color: white ;
+}
+img {
+	width: 100%px ;
+	height: 100% ;
+background-size: 100% ;
+}
