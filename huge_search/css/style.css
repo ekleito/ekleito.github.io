@@ -7,6 +7,10 @@ html, body {
 body {
 	background-color: #F1F1F1;
 	font-family: Arial sans-serif;
+	color: rgba(145,145,145,0.7);
+}
+a {
+	text-decoration: none;
 }
 .all {
 	display: inline-block;
@@ -47,6 +51,13 @@ position: absolute;
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* .search_input:checked {
-	border: none;
-} */
+
+	
+}
+.people,
+.popular,
+.last {
+	display: inline-block;
+	border: 1px solid black;
+	width: 30%;
+}
