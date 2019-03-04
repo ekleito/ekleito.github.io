@@ -1,0 +1,117 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: sans-serif; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: white;
+    background-color: black;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form
+{
+    min-width: 30%; 
+    padding: 15px;
+
+    color: black;
+    border-radius: 10px;
+    background: white;
+}
+form fieldset
+{
+    padding: 30px;
+}
+form fieldset > *
+{
+    display: block;
+}
+form fieldset > *:not(label)
+{
+    border: black solid;
+}
+form fieldset legend
+{
+    border: none;
+}
+
+label
+{
+    margin-bottom: .5rem;
+}
+
+[id]
+{
+    margin-bottom: 1rem;
+
+    border-radius: 5px;
+}
+
+[type='submit']
+{
+    min-width: 50%;
+    padding: 15px 0; 
+
+    text-transform: uppercase;
+
+    color: white;
+    border-color: #648880;
+    border-radius: 5px;
+    background-color: #648880;
+}
+
+input,
+select
+{
+    padding: 5px;
+}
+
+input:not([type='submit']),
+textarea
+{
+    width: 100%;
+}
+
+input[type='radio']
+{
+    display: inline; 
+
+    width: initial;
+}
+
+input[type='checkbox']
+{
+    opacity: 0;
+}
+
+.psevdo
+{
+    display: inline-block;
+
+    width: size;
+    height: size;
+
+    background-color: red;
+}
