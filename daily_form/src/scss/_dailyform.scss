@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	min-height: 100vh;
+}
+body {
+	font-size: 100%;
+	background-color: #285F23;
+	font-family: 'Arial' , sans-serif;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.daily_form {
+background: url("../img/mainbg.png") no-repeat 50% 50%;
+padding: 60px;
+background-size: auto;
+max-width: 800px;
+
+
+
+form {
+	background: white;
+	color: #7A7B7F;
+	padding: 30px;
+	border-radius: 3px;
+	min-width: 30%;
+	width: 600px;
+	
+
+	
+
+	[id]{
+		margin-bottom: 1rem;
+		border-radius: 3px;
+		height: 40px;
+	}
+
+	.signup {
+		border-radius: 5px;
+		background-color: #EA355A;
+		border-color: #EA355A;
+		color: white;
+		text-transform: uppercase;
+		min-width: 100%;
+		padding: 15px 0;
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+    }
+	.name {
+		display: flex;
+	}
+
+	input  {
+		padding: 15px;
+		background-color: #F0F0F0;
+   }
+   input:nth-child(n+3) {
+   	min-width: 100%;
+   }
+   input:nth-child(-n+2) {
+   	width: 100%;
+   }
+   input:nth-child(1) {
+   	margin-right: 15px;
+   }
+	
+}
+.logo__title {
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	margin: 0;
+	margin-bottom: 15px;
+}
+p {
+	margin-bottom: 30px;
+	line-height: 1.4;
+	font-size: 13px;
+}
+.daily__link {
+	text-decoration: none;
+	color: #E12A6C;
+}
+}
+.payments {
+	background-color: #1C2024;
+    background: url('../img/unsplash.png') no-repeat;
+    padding: 60px 170px 60px 170px;
+background-size: auto;
+max-width: 800px;
+font-family: 'Monserrat' , sans-serif;
+
+
+
+.forms {
+	display: flex;
+	flex-direction: column;
+
+	 
+
+
+&__top {
+	display: flex;
+	background-color: #EEE4AA;
+	justify-content: space-between;
+	padding: 20px 25px 20px 25px;
+
+
+
+	&-title {
+		font-size: 14px;
+		font-weight: bold;
+		color: #637570;
+	    line-height: 1.4;
+
+	}
+
+    &-text {
+    	color: #A6A28D;
+    	font-size: 10px;
+    	
+    }
+
+	&-number {
+		font-size: 36px;
+		color: #637570;
+		letter-spacing: -50;
+	}
+	
+}
+&__table {
+	
+	background-color: white;
+	padding: 40px 25px 20px 25px;
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	color: #9EABAD;
+
+	&-pay {
+
+        	height: 45px;
+		margin-bottom: 20px;
+		background: #25B167;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+	}
+
+	&-link {
+		color: #9EABAD;
+		align-items: center;
+        
+        &:last-child {
+        	text-align: center;
+        	margin: auto; 
+
+        }
+
+        
+	}
+
+	&-label {
+		margin-bottom: 10px;
+
+	}
+
+	&-item {
+		height: 40px;
+		margin-bottom: 29px;
+		padding: 10px;
+		color: black;
+		font-size: 13px;
+
+		
+	}
+
+	input[id="cvvNumber"] { 
+    width: 30%;
+    margin-right: 10px;
+    }
+	 
+	
+	&-line {
+		margin-bottom: 33px;
+	}
+
+&-dates {
+	display: flex;
+
+	select[id="month"] {
+		width: 60%;
+		margin-right: 20px;
+	}
+	select[id="year"] {
+		width: 35%;
+	}
+
+}
+}
+}
+}

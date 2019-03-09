@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Forms</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="daily_form">
+			<form action="#">
+				<div class="logo">
+					<p class="logo__title"><img src="img/icon.png" alt="logo">Create your free account</p>
+					<p>Come and join in our cool and amazing community,fill in your details to get started.Already have an account?
+					<a href="#" class="logo__link">Log in.</a>
+					</p>
+				</div>
+			<div class="name">
+			
+			<input type="text" id="firstName" placeholder="First name" name="firstName">
+			<input type="text" id="lastName" placeholder="Last name" name="lastName">
+
+			</div>
+			<input type="email" id="userEmail" placeholder="Email address" name="userEmail">
+		
+			<input type="password" id="userPass" placeholder="Password" name="userPass">
+			<button class="signup">Sign up for free</button><p>By clicking on "Sign up for free",you agree to the
+				<a href="#">Teams of Service</a>and the<a href="#">
+				Privavy Policy</a>
+			</p>
+			</form>
+</div>
+<div class="payments">
+	<form action="#" class="forms">
+		<div class="forms__top">
+		<p class="forms__top-title">Harold Finch<br>
+			<span class="forms__top-text">YOUR TOTAL</span></p>
+		
+		<h2 class="forms__top-number">$88</h2>
+		
+	</div>
+	<div class="forms__table">
+		<label for="cardNumber" class="forms__table-label">
+			Credit curd number
+			</label>
+			<input type="text" class="forms__table-item" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" placeholder="Card number" required>
+			
+			<label for="month" class="forms__table-label">
+				Expiration date
+			</label>
+			<div class="forms__table-dates">
+			<select name="month" id="month" class="forms__table-item" required>
+				<option value="">Month</option>
+                <option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<label for="year">
+				</label>
+			<select name="year" id="year" class="forms__table-item" required>
+				<option value="">Year</option>
+				<option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+            </select>
+            </div>
+            <label for="cvvNumber" class="forms__table-label">
+			CVV
+			</label>
+			<div class="forms__table-cvv">
+			<input type="text" id="cvvNumber" name="cvvNumber" pattern="[0-9]{4}" required class="forms__table-item"> 3 or 4 digits-<a href="#" class="forms__table-link">viev example</a>
+			</div>
+			<hr class="forms__table-line">
+		
+		    <button class="forms__table-pay">Pay</button>
+			
+			<a href="#" class="forms__table-link">Cancel order</a>
+			</div>
+	</form>
+</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: 'Arial' , sans-serif;
+    font-size: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    background-color: #285f23;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.daily_form
+{
+    max-width: 800px; 
+    padding: 60px;
+
+    background: url('../img/mainbg.png') no-repeat 50% 50%;
+    background-size: auto;
+}
+.daily_form form
+{
+    width: 600px; 
+    min-width: 30%;
+    padding: 30px;
+
+    color: #7a7b7f;
+    border-radius: 3px;
+    background: white;
+}
+.daily_form form [id]
+{
+    height: 40px; 
+    margin-bottom: 1rem;
+
+    border-radius: 3px;
+}
+.daily_form form .signup
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    min-width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 0;
+
+    cursor: pointer; 
+    text-transform: uppercase;
+
+    color: white;
+    border-color: #ea355a;
+    border-radius: 5px;
+    background-color: #ea355a;
+}
+.daily_form form .name
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.daily_form form input
+{
+    padding: 15px;
+
+    background-color: #f0f0f0;
+}
+.daily_form form input:nth-child(n+3)
+{
+    min-width: 100%;
+}
+.daily_form form input:nth-child(-n+2)
+{
+    width: 100%;
+}
+.daily_form form input:nth-child(1)
+{
+    margin-right: 15px;
+}
+.daily_form .logo__title
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 0;
+    margin-bottom: 15px; 
+
+    color: black;
+}
+.daily_form p
+{
+    font-size: 13px; 
+    line-height: 1.4;
+
+    margin-bottom: 30px;
+}
+.daily_form .daily__link
+{
+    text-decoration: none;
+
+    color: #e12a6c;
+}
+
+.payments
+{
+    font-family: 'Monserrat' , sans-serif; 
+
+    max-width: 800px;
+    padding: 60px 170px 60px 170px;
+
+    background: url('../img/unsplash.png') no-repeat;
+    background-color: #1c2024;
+    background-size: auto;
+}
+.payments .forms
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.payments .forms__top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 20px 25px 20px 25px; 
+
+    background-color: #eee4aa;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.payments .forms__top-title
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4; 
+
+    color: #637570;
+}
+.payments .forms__top-text
+{
+    font-size: 10px; 
+
+    color: #a6a28d;
+}
+.payments .forms__top-number
+{
+    font-size: 36px;
+
+    letter-spacing: -50; 
+
+    color: #637570;
+}
+.payments .forms__table
+{
+    font-size: 13px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    padding: 40px 25px 20px 25px;
+
+    color: #9eabad; 
+    background-color: white;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.payments .forms__table-pay
+{
+    font-size: 20px;
+    font-weight: bold; 
+
+    height: 45px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    background: #25b167;
+}
+.payments .forms__table-link
+{
+    color: #9eabad;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.payments .forms__table-link:last-child
+{
+    margin: auto; 
+
+    text-align: center;
+}
+.payments .forms__table-label
+{
+    margin-bottom: 10px;
+}
+.payments .forms__table-item
+{
+    font-size: 13px; 
+
+    height: 40px;
+    margin-bottom: 29px;
+    padding: 10px;
+
+    color: black;
+}
+.payments .forms__table input[id='cvvNumber']
+{
+    width: 30%;
+    margin-right: 10px;
+}
+.payments .forms__table-line
+{
+    margin-bottom: 33px;
+}
+.payments .forms__table-dates
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.payments .forms__table-dates select[id='month']
+{
+    width: 60%;
+    margin-right: 20px;
+}
+.payments .forms__table-dates select[id='year']
+{
+    width: 35%;
+}
