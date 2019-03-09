@@ -16,9 +16,28 @@ section {
 	background-color: red;
 }
 }
+$colors: (
+red, blue, green, black, grey
+);
 
-@each $color in red, blue, green, black, grey {
+@each $color in $colors {
   .#{$color} {
     background-color: #{$color};
   }
+}
+$z-index: (
+    navbar: 1,
+    content: 2
+);
+
+@function z($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+.navigation {
+  @include z-index(navbar); // 1
 }

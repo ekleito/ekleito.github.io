@@ -41,3 +41,15 @@ section {
 .grey {
 	background-color: grey;
 }
+
+.item-6 {
+	width: 12em;
+}
+
+.item-4 {
+	width: 8em;
+}
+
+.item-2 {
+	width: 4em;
+}
