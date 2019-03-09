@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+section {
+	min-height: 20vh;
+	border-bottom: 1px solid black;
+}
+
+@for $i from 1 through 3 {
+.section-#{$i} {
+	background-color: red;
+}
+}
+
+@each $color in red, blue, green, black, grey {
+  .#{$color} {
+    background-color: #{$color};
+  }
+}
