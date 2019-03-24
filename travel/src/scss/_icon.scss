@@ -1,0 +1,29 @@
+.icon {
+	height: 50vh;
+	background: $dark-grey-color;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	font-size: 26px;
+
+	.container {
+		margin: auto;
+		width: 100%;
+		max-width: 1140px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.search {
+		display: flex;
+		flex-direction: column;
+		
+
+
+		
+
+		&__icon {
+			background-image: url("../img/search-icon.svg") no-repeat;
+		}
+	}
+}

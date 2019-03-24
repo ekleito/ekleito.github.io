@@ -1,0 +1,87 @@
+.firstscreen {
+	display: flex;
+	height: 100vh;
+	background: url("../img/header-bg.png") no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	font-family: 'Aleo', sans-serif;
+	
+
+	
+
+	
+
+	&__title {
+		font-size: 34px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+	}
+	&__text {
+		font-size: 20px;
+		margin-bottom: 50px;
+		letter-spacing: 3px;
+	}
+   
+
+	&__form {
+		font-size: 0;
+		width: 100%;
+		max-width: 650px;
+		cursor: pointer;
+		margin-bottom: 115px;
+		
+
+
+		& > * {
+			display: inline-block;
+			border: none;
+			outline: none;
+			
+		}
+
+		[type="search"] {
+			font-size: 14px;
+			color: $light-grey-color;
+			height: 60px;
+			text-align: center;
+			width: 75%;
+			max-width: 500px;
+			letter-spacing: 3px;
+			cursor: pointer;
+		}
+	}
+	&__btn {
+		 border: 2px solid $white-color;
+	     background: $dark-blue-color;
+	     height: 60px;
+	     width: 25%;
+	     max-width: 150px;
+	     font-size: 16px;
+	     color: $white-color;
+	     text-align: center;
+	     vertical-align: bottom;
+	     text-transform: uppercase;
+	     cursor: pointer;
+    }
+    &__scroll {
+    	
+    	position: relative;
+
+      &::after {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		bottom: 25%;
+		border: 1px solid white;
+		transform: rotate(45deg);
+		border-top: none;
+		border-left: none;
+	}
+    }
+	}
+
