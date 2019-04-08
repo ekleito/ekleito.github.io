@@ -4,7 +4,15 @@
 	padding: 0;
 }
 
-
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: red;
+  font-size: 3rem;
+}
 
 section {
 	min-height: 20vh;

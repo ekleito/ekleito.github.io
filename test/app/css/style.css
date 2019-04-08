@@ -5,6 +5,22 @@
 	padding: 0;
 }
 
+body {
+	background-color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	color: red;
+	font-size: 3rem;
+}
+
 section {
 	min-height: 20vh;
 	border-bottom: 1px solid black;
@@ -42,14 +58,6 @@ section {
 	background-color: grey;
 }
 
-.item-6 {
-	width: 12em;
-}
-
-.item-4 {
-	width: 8em;
-}
-
-.item-2 {
-	width: 4em;
+.navigation {
+	z-index: z-index(navbar);
 }
