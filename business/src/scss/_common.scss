@@ -3,25 +3,33 @@ html, body {
 }
 
 body {
-	font-family: $main-font;
+	
 	font-size: $base-size;
 	color: $black;
 }
 
 a {
-	display: block;
+	
 	color: $black;
 	text-decoration: none;
 	@include transition(color);
 
-	// &:link {
-		
-	// 	background-color: $main-color;
-	// 	color: $white;
-	// }
 
-	// &:hover {
-	// 	text-decoration: none;		
-	// 	color: $corp-blue;
-	// }
+
+	&:hover {
+		text-decoration: none;		
+		color: $corp-blue;
+	}
+}
+.form-control {
+	padding: 21px 0 21px 45px;
+	position: relative;
+	z-index: 0;
+}
+span {
+	position: absolute;
+	top: 330px;
+	right: 10px;
+	color: red;
+	z-index: 1;
 }

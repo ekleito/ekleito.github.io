@@ -1,4 +1,23 @@
 .banner {
 	min-height: 100vh;
 	background-color: $corp-blue;
+	color: $white;
+	text-align: center;
+	font-family: $main-font;
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+
+
+	&-title {
+     font-size: $main-title;
+     font-weight: bold;
+     text-transform: uppercase;
+     margin-bottom: .5rem;
+	}
+
+	&-text {
+      margin-bottom: 3rem;
+	}
+	
 }

@@ -1,33 +1,42 @@
 .top-line {
-	padding: px_to_rem(30px) 0;
-		background-color: rgba($black, .1);
+	padding: 25px;
 	width: 100%;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
+	font-family: $main-font;
+
+	
 
 	&__logo {
 
 	}
 
-	&-list {
-
+	&__menu {
+        justify-content: space-between;
+        padding-left: 0;
 		}
 
 		&__item {
 			list-style: none;
-			margin-right: 35px;
-
-			&:last-child {
+			
+            &:last-child {
 				margin-right: 0;
 			}
+			&.active {
+			padding-left: 0;
+
+			[class*="-line__link"] {
+				background-color: $main-color;
+				padding: 10px 15px;
+				color: $white;
+				border-radius: 3px;
+			}
+		}
 
 
 		}
 
 		&__link {
 			text-transform: uppercase;
-			color: $black;
+			color: #7B7B7B;
 			font-size: 12px;
 		}
 	

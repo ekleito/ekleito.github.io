@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,700');
 $main-font: 'Open Sans', sans-serif;
-$secondary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Lato', sans-serif;
 
 $main-color: #FFBB42;
 $bg-color: #FFC155;
+$corp-blue: #709DCA;
+$title-color: #394B50;
+$text-color: #7B7B7B;
 $white: #ffffff;
 $black: #000;
-$corp-blue: #709DCA;
 
-$base-size: 14px;
+$base-size: 13px;
 @function px_to_rem($target, $context: $base-size) {
   @if $target == 0 { @return 0 }
   @return $target / $context + 0rem;
@@ -19,5 +21,5 @@ $middle-size: $base-size;
 $logo-size: px_to_rem(18px);
 $form-title: px_to_rem(24px);
 $section-title: px_to_rem(30px);
-$main-title: px_to_rem(36px);
+$main-title: px_to_rem(30px);
 $main-title-home: 2.7rem;
