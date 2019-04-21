@@ -1,13 +1,22 @@
 .banner {
 	min-height: 100vh;
-	background-color: $corp-blue;
 	color: $white;
 	text-align: center;
 	font-family: $main-font;
-	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+   
+    .blue-color {
+    	padding-top: 100px;
+    	min-height: 80vh;
+    	background-color: $corp-blue;
+    }
 
+    // &-img {
+    // 	position: absolute;
+    // 	transform: translateY(-50%);
+    // }
 
 	&-title {
      font-size: $main-title;

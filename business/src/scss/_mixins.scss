@@ -10,3 +10,14 @@
 @mixin transition($prop: all){
 	transition: $prop .2s ease;
 }
+
+@mixin font-awesome($content){
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2rem;
+    color: $text-color;
+    display: inline-block;
+    text-decoration: inherit;
+    content: $content;
+}
